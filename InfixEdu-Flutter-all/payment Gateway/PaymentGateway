@@ -1,0 +1,39 @@
+PaymentGateway
+
+1.RazorPayment
+-Create account to https://dashboard.razorpay.com/#/access/signin
+-Razorpay Flutter Plugin for Android and iOS https://razorpay.com/docs/payment-gateway/flutter-integration/
+-Select the mode (Test or Live) for which you want to generate the API key.
+Note:
+You have to generate separate API Keys for the test and live modes. No money is deducted from your account in test mode.
+
+
+2.SqurePayment(GPay,ApplePay)
+-The Flutter plugin for Square In-App Payments SDK is a wrapper for the native Android and iOS SDKs and supports the following native In-App Payments SDK versions:
+* iOS: 1.3.0
+* Android: 1.3.0
+-https://github.com/square/in-app-payments-flutter-plugin
+-Get a Square Application ID and Location ID from (https://developer.squareup.com/apps)
+-For IOS You need apple MarchandId
+-for backend service https://github.com/square/in-app-payments-server-quickstart(Quick start for backend https://id.heroku.com/login)
+
+
+3.Paytm
+
+-Go to https://dashboard.paytm.com/ and create an account.
+Then fetch merchant id and keys from https://dashboard.paytm.com/next/apikeys
+
+-We are using NodeJS, so I have grabbed NodeJS SDK for PayTM and added in demo API. This API exposes only one endpoint which is to initiate payment. Rest of the process is done through PayTM payments pages.
+Clone the repository from: https://github.com/iqans/paytm-checksum-api-nodejs
+
+-We recommend you that to go through this link(https://medium.com/@iqan/flutter-payments-using-paytm-7c48539dfdee)
+
+4.Braintree for Flutter
+A Flutter plugin that wraps the native Braintree SDKs. Unlike other plugins, this plugin not only lets you start Braintree's native Drop-in UI, but also allows you to create your own custom Flutter UI with Braintree functionality.
+
+Go to the Developer account of BrainTree and generate your client token from dashboard , For testing purpose you need to generate sandBox token  or For Production you need to generate production token and place the token in app.
+For more information you can visit https://github.com/Pikaju/FlutterBraintree
+
+
+
+
